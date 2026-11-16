@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f1e8">
+  <meta name="description" content="AdamCandle — una piccola selezione di candele per dare atmosfera ai tuoi spazi.">
+  <title>AdamCandle — luce, con calma</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#inizio" aria-label="AdamCandle, torna all'inizio">
+        <span class="wordmark-mark" aria-hidden="true">a<span>.</span></span>
+        <span>adam<span>candle</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Navigazione principale">
+        <a href="#collezione">Collezione</a>
+        <a href="#filosofia">La nostra idea</a>
+        <button class="cart-button" type="button" aria-label="Carrello dimostrativo, 0 articoli">
+          <span aria-hidden="true" class="cart-icon">＋</span>
+          <span>Carrello</span>
+          <span class="cart-count" aria-hidden="true">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenuto">
+    <section class="hero" id="inizio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Oggetti per i tuoi momenti</p>
+        <h1 id="hero-title">La luce giusta.<br><em>Il tempo tuo.</em></h1>
+        <p class="hero-description">Candele essenziali, pensate per accompagnare i piccoli rituali di ogni giorno.</p>
+        <a class="button button-dark" href="#collezione">Scopri la collezione <span aria-hidden="true">↗</span></a>
+        <p class="hero-note">Una selezione dimostrativa, da esplorare con calma.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Illustrazione decorativa di candele accese su un tavolo">
+        <div class="art-sun"></div>
+        <div class="art-leaf leaf-one"></div>
+        <div class="art-leaf leaf-two"></div>
+        <div class="art-table"></div>
+        <div class="hero-candle candle-tall"><span class="flame"></span><span class="wick"></span></div>
+        <div class="hero-candle candle-short"><span class="flame"></span><span class="wick"></span></div>
+        <div class="hero-candle candle-jar"><span class="flame"></span><span class="wick"></span><span class="jar-label">A.</span></div>
+        <span class="art-caption">un momento, tutto tuo</span>
+        <span class="art-stamp" aria-hidden="true">LUCE<br>QUOTIDIANA</span>
+      </div>
+      <span class="hero-index" aria-hidden="true">01 / 03</span>
+    </section>
+
+    <section class="collection section-wrap" id="collezione" aria-labelledby="collection-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Piccoli punti di luce</p>
+          <h2 id="collection-title">La collezione <span>Adam</span></h2>
+        </div>
+        <p>Forme semplici, toni caldi e una luce gentile.<br>Trova quella che parla al tuo spazio.</p>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Filtra le candele per categoria">
+        <button class="filter-button is-active" type="button" data-filter="tutte" aria-pressed="true">Tutte <span>04</span></button>
+        <button class="filter-button" type="button" data-filter="vaso" aria-pressed="false">In vaso <span>02</span></button>
+        <button class="filter-button" type="button" data-filter="scultoree" aria-pressed="false">Scultoree <span>02</span></button>
+      </div>
+
+      <p class="filter-status visually-hidden" aria-live="polite"></p>
+      <div class="product-grid">
+        <article class="product-card" data-category="vaso">
+          <div class="product-art product-art-amber" role="img" aria-label="Candela color avorio in un contenitore ambrato">
+            <span class="product-spark" aria-hidden="true"></span>
+            <span class="product-vessel vessel-amber"><i class="small-flame"></i><b>A.</b></span>
+            <span class="art-number">01</span>
+          </div>
+          <div class="product-info">
+            <div><p class="product-type">IN VASO · AMBRA</p><h3>Ora lenta</h3></div>
+            <span class="product-price">€ 18 <small>demo</small></span>
+          </div>
+          <p class="product-description">Una presenza calda, dalle linee pulite e senza fretta.</p>
+          <button class="add-button" type="button" data-product="Ora lenta">Aggiungi alla selezione <span aria-hidden="true">＋</span></button>
+        </article>
+
+        <article class="product-card" data-category="scultoree">
+          <div class="product-art product-art-rose" role="img" aria-label="Candela scultorea a forma di arco color terracotta chiaro">
+            <span class="product-spark" aria-hidden="true"></span>
+            <span class="sculpture sculpture-arch"><i></i></span>
+            <span class="art-number">02</span>
+          </div>
+          <div class="product-info">
+            <div><p class="product-type">SCULTOREA · ROSA</p><h3>Forma quieta</h3></div>
+            <span class="product-price">€ 22 <small>demo</small></span>
+          </div>
+          <p class="product-description">Una forma morbida che arreda anche quando è spenta.</p>
+          <button class="add-button" type="button" data-product="Forma quieta">Aggiungi alla selezione <span aria-hidden="true">＋</span></button>
+        </article>
+
+        <article class="product-card" data-category="vaso">
+          <div class="product-art product-art-sage" role="img" aria-label="Candela color crema in un contenitore verde salvia">
+            <span class="product-spark" aria-hidden="true"></span>
+            <span class="product-vessel vessel-sage"><i class="small-flame"></i><b>A.</b></span>
+            <span class="art-number">03</span>
+          </div>
+          <div class="product-info">
+            <div><p class="product-type">IN VASO · SALVIA</p><h3>Pausa verde</h3></div>
+            <span class="product-price">€ 18 <small>demo</small></span>
+          </div>
+          <p class="product-description">Un accento delicato per i tuoi angoli preferiti.</p>
+          <button class="add-button" type="button" data-product="Pausa verde">Aggiungi alla selezione <span aria-hidden="true">＋</span></button>
+        </article>
+
+        <article class="product-card" data-category="scultoree">
+          <div class="product-art product-art-sand" role="img" aria-label="Candela scultorea color sabbia composta da sfere">
+            <span class="product-spark" aria-hidden="true"></span>
+            <span class="sculpture sculpture-orb"><i></i><i></i><i></i></span>
+            <span class="art-number">04</span>
+          </div>
+          <div class="product-info">
+            <div><p class="product-type">SCULTOREA · SABBIA</p><h3>Tre respiri</h3></div>
+            <span class="product-price">€ 20 <small>demo</small></span>
+          </div>
+          <p class="product-description">Volumi essenziali, ispirati alla semplicità delle forme.</p>
+          <button class="add-button" type="button" data-product="Tre respiri">Aggiungi alla selezione <span aria-hidden="true">＋</span></button>
+        </article>
+      </div>
+      <p class="demo-note">Prezzi e prodotti sono esempi dimostrativi. Questa pagina non effettua ordini né pagamenti.</p>
+    </section>
+
+    <section class="interlude" id="filosofia" aria-labelledby="interlude-title">
+      <div class="interlude-ornament" aria-hidden="true"><span></span><i></i></div>
+      <p class="eyebrow">Una piccola pausa</p>
+      <h2 id="interlude-title">Non serve un’occasione.<br><em>Basta esserci.</em></h2>
+      <p>Accendi una candela, lascia spazio al silenzio, ritrova il tuo ritmo.</p>
+      <a href="#collezione" class="text-link">Torna alla collezione <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="closing section-wrap" aria-label="Informazioni sul progetto">
+      <span class="closing-mark" aria-hidden="true">a.</span>
+      <p>AdamCandle è una vetrina dimostrativa.<br><strong>Nessuna vendita è attiva.</strong></p>
+      <a href="#inizio" class="back-top">Torna su ↑</a>
+    </section>
+  </main>
+
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
